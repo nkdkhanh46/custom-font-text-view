@@ -16,11 +16,11 @@ Apply custom font to your TextView / EditText
 
 #### Update font programmatically
 ```javascript
-        tvName.setFont("nunito_italic.ttf")
+    tvName.setFont("nunito_italic.ttf")
 ```
 
 ## License
-Copyright 2016 Siclo Mobile Vietnam
+Copyright 2019 Martin Mystery
 ```
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
