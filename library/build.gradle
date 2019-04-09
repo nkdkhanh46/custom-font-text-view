@@ -1,6 +1,22 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-android'
+apply plugin: 'com.novoda.bintray-release'
+
+publish {
+
+    def groupProjectID = 'com.martin.customfonttextview'
+    def artifactProjectID = 'customfonttextview'
+    def publishVersionID = '0.0.1'
+
+    userOrg = 'haka'
+    repoName = 'CustomFontTextView'
+    groupId = groupProjectID
+    artifactId = artifactProjectID
+    publishVersion = publishVersionID
+    desc = 'Android library for displaying TextView/EditText with custom font.'
+    website = 'https://github.com/nkdkhanh46/custom-font-text-view'
+}
 
 android {
     compileSdkVersion 28
@@ -9,7 +25,7 @@ android {
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
-        versionName "1.0"
+        versionName "0.0.1"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
@@ -20,6 +36,10 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+    }
+
+    lintOptions {
+        abortOnError false
     }
 }
 
