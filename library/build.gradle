@@ -9,7 +9,7 @@ publish {
     def artifactProjectID = 'customfonttextview'
     def publishVersionID = '0.0.1'
 
-    userOrg = 'haka'
+    userOrg = 'nkdkhanh46'
     repoName = 'CustomFontTextView'
     groupId = groupProjectID
     artifactId = artifactProjectID
