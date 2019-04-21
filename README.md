@@ -4,6 +4,18 @@ Apply custom font to your TextView / EditText
 # Usage
 #### Copy fonts to assets/fonts folder
 
+#Intergrating gradle
+Add this to your module's build.gradle
+
+```repositories {
+    mavenCentral()
+    maven {
+        url "https://dl.bintray.com/nkdkhanh46/CustomFontTextView"
+    }
+}```
+
+```implementation 'com.martin.customfonttextview:customfonttextview:0.0.1'```
+
 #### Add CustomFontTextView to xml layout
 
 ```javascript
